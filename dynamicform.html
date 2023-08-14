@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orderform</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <table id="order-entry">
+        <div class="formheading">
+            <span class="formname">ORDER FORM</span>
+            <span><img src="logotc.png" alt=""></span>
+            <span class="formdate">Date:............</span>
+            <h5>trudyscreationz@gmail.com (954) 588-8961</h5>
+        </div>
+        
+        <thead>
+            <tr>
+                <th>SL</th>
+                <th>BRACELATE</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Sum</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input class="slnumber" value="1#"></td>
+                <td><input class="productname" value="BLING/ASSORTED"></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="10.00"></td>
+                <td><input class="form-line" value="0" readonly></td>
+            </tr>
+            <tr>
+                <td><input class="slnumber"value="2#"></td>
+                <td><input class="productname" value="RAW CHIPS"></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="20"></td>
+                <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td><input class="slnumber"value="3#"></td>
+                <td><input class="productname" value="CHAKRAS"></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="10.5"></td>
+                <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td><input class="slnumber"value="4#"></td>
+                <td><input class="productname" value="ADJUSTABLE"></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="30"></td>
+                <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td><input class="slnumber"value="5#"></td>
+                <td><input class="productname" value="CROWN/SPECALITY"></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="5"></td>
+                <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td><input class="slnumber"value="6#"></td>
+                <td><input class="productname" value=""></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="9"></td>
+                <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td><input class="slnumber"value="7#"></td>
+                <td><input class="productname" value=""></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="8"></td>
+                <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+            </tr>
+
+            <tr>
+                <td><input class="slnumber"value="8#"></td>
+                <td><input class="productname" value=""></td>
+                <td><input class="form-calc form-qty" value="0"></td>
+                <td><input class="form-calc form-cost" value="12"></td>
+                <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+            </tr>
+
+
+
+
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>NECKLACES</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Sum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="slnumber" value="1#"></td>
+                    <td><input class="productname" value="WIRED WRAPPED PENDANT SM"></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="10.00"></td>
+                    <td><input class="form-line" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><input class="slnumber"value="2#"></td>
+                    <td><input class="productname" value="WIRED WRAPPED PENDANT LG"></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="20"></td>
+                    <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                </tr>
+    
+                <tr>
+                    <td><input class="slnumber"value="3#"></td>
+                    <td><input class="productname" value="HEXAGONAL WIRED WRAPPED"></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="32"></td>
+                    <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                </tr>
+    
+                <tr>
+                    <td><input class="slnumber"value="4#"></td>
+                    <td><input class="productname" value="SPECALITY WRAPPED"></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="25"></td>
+                    <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                </tr>
+    
+                <tr>
+                    <td><input class="slnumber"value="5#"></td>
+                    <td><input class="productname" value="CHIP CHOCKER"></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="50"></td>
+                    <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                </tr>
+    
+                <tr>
+                    <td><input class="slnumber"value="6#"></td>
+                    <td><input class="productname" value=""></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="10"></td>
+                    <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                </tr>
+    
+                <tr>
+                    <td><input class="slnumber"value="7#"></td>
+                    <td><input class="productname" value=""></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="30"></td>
+                    <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                </tr>
+    
+                <tr>
+                    <td><input class="slnumber"value="8#"></td>
+                    <td><input class="productname" value=""></td>
+                    <td><input class="form-calc form-qty" value="0"></td>
+                    <td><input class="form-calc form-cost" value="5"></td>
+                    <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                </tr>
+            
+                <thead>
+                    <tr>
+                        <th>SL</th>
+                        <th>KEEPSAKE JEWERLY BOXES</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Sum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="slnumber" value="1#"></td>
+                        <td><input class="productname" value="ROSE QUARTZ"></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="10.00"></td>
+                        <td><input class="form-line" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input class="slnumber"value="2#"></td>
+                        <td><input class="productname" value="AMETHYSTS"></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="6.80"></td>
+                        <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><input class="slnumber"value="3#"></td>
+                        <td><input class="productname" value="LAPIS LAZULI"></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="10.33"></td>
+                        <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><input class="slnumber"value="4#"></td>
+                        <td><input class="productname" value="TURQUOISE"></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="22"></td>
+                        <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><input class="slnumber"value="5#"></td>
+                        <td><input class="productname" value="BLACK OBSIDIAN"></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="9"></td>
+                        <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><input class="slnumber"value="6#"></td>
+                        <td><input class="productname" value=""></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="30"></td>
+                        <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><input class="slnumber"value="7#"></td>
+                        <td><input class="productname" value=""></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="35"></td>
+                        <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><input class="slnumber"value="8#"></td>
+                        <td><input class="productname" value=""></td>
+                        <td><input class="form-calc form-qty" value="0"></td>
+                        <td><input class="form-calc form-cost" value="40"></td>
+                        <td><input class="form-line" value="0" readonly onchange="this.value=addCommas(this.value);"></td>
+                    </tr>
+                    
+            
+
+            <tr>
+                <td colspan="1">Total: </td>
+                <td id="total"></td>
+            </tr>
+        </tbody>
+        
+       
+    </table>  
+    <div class="tablefooter">
+        <h6>*Price are subject to change without notice. Signing this form you assume responsibility for lost or stolen products. While in your store or possession. If you purchase in bulk or wholesale rules do not apply</h6>
+        <span class="orderformsignature">Signature</span>
+        <span class="orderformdate">Date:</span>
+    </div>
+    <div class="printformdiv">
+        <button class="formprintbutton" onclick="window.print()">Print/Save Form</button>
+    </div>
+  
+    
+    <script>
+        $(document).ready(function() {
+    $("#order-entry").on("keyup", ".form-calc", function() {
+        var parent = $(this).closest("tr");
+        parent.find(".form-line").val((parent.find(".form-qty").val() * parent.find(".form-cost").val()).toFixed(2));
+        var total = 0;
+        $(".form-line").each(function(){
+            total += parseFloat($(this).val()||0);
+        });
+        $("#total").text(total.toFixed(2));
+    });
+});
+
+function addCommas(n){
+    var s=n.split('.')[1];
+    (s) ? s="."+s : s="";
+    n=n.split('.')[0]
+    while(n.length>3){
+        s=","+n.substr(n.length-3,3)+s;
+        n=n.substr(0,n.length-3)
+    }
+    return n+s
+}
+
+
+    </script>
+</body>
+</html>
